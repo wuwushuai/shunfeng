@@ -1,0 +1,94 @@
+#topMenu-wrap {
+  height: 33px;
+  width: 100%;
+  background: #f7f7f7; }
+  #topMenu-wrap #topMenu {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background: red;
+    text-align: center;
+    line-height: 33px; }
+    #topMenu-wrap #topMenu .topMenu_lt .adr .adr_short {
+      width: 52px;
+      height: 22px;
+      border: 1px solid #000;
+      margin-top: 5px;
+      position: relative; }
+      #topMenu-wrap #topMenu .topMenu_lt .adr .adr_short span {
+        display: block;
+        line-height: 22px;
+        width: 30px;
+        height: 20px; }
+      #topMenu-wrap #topMenu .topMenu_lt .adr .adr_short b {
+        background: url(../image/header.png) no-repeat -86px -130px;
+        display: block;
+        width: 8px;
+        height: 5px;
+        position: absolute;
+        right: 5px;
+        top: 8px; }
+    #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long {
+      text-align: left;
+      width: 483px;
+      border: 1px solid #CECECE;
+      display: none; }
+      #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long .long_top {
+        width: 463px;
+        height: 30px;
+        margin: 5px 10px;
+        border-bottom: 1px solid #cecece; }
+        #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long .long_top div {
+          background: url(../image/index_icon_new.png) -245px -33px no-repeat;
+          width: 18px;
+          height: 18px;
+          margin: 5px 0 0 0;
+          cursor: pointer; }
+      #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long .long_mid {
+        width: 463px;
+        height: 38px; }
+        #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long .long_mid ul {
+          margin-left: 10px; }
+        #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long .long_mid ul li {
+          float: left;
+          line-height: 33px;
+          height: 33px;
+          width: 38px; }
+      #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long .long_bottom {
+        margin-left: 10px;
+        margin-bottom: 15px; }
+        #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long .long_bottom .citymore {
+          width: 418px;
+          height: 33px; }
+        #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long .long_bottom .quxu {
+          height: 25px; }
+          #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long .long_bottom .quxu span {
+            display: block;
+            line-height: 25px; }
+          #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long .long_bottom .quxu ul li {
+            float: left;
+            margin-left: 20px;
+            height: 25px;
+            line-height: 22px; }
+
+#header {
+  height: 104px;
+  width: 1200px;
+  margin: 0 auto;
+  background: blue; }
+
+#mainNav {
+  width: 100%;
+  height: 32px;
+  border-bottom: 2px solid #679800;
+  background: gold; }
+
+#slide_show {
+  width: 100%;
+  height: 480px;
+  background: burlywood; }
+
+#sixYear_wrap {
+  height: 573px;
+  width: 100%;
+  background: url(imgage/thefifthyear.png) top center no-repeat; }
