@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #topMenu-wrap {
   height: 33px;
   width: 100%;
@@ -39,7 +40,8 @@
         display: none;
         position: absolute;
         left: 0;
-        top: 28px; }
+        top: 28px;
+        z-index: 2; }
         #topMenu-wrap #topMenu .topMenu_lt .adr .adr_long .long_top {
           width: 463px;
           height: 30px;
@@ -110,7 +112,7 @@
       width: 78px;
       height: 22px;
       position: relative;
-      z-index: 1; }
+      z-index: 2; }
       #topMenu-wrap #topMenu .topMenu_rt .lithree b {
         background: url(../image/header.png) no-repeat -86px -130px;
         display: block;
@@ -133,7 +135,7 @@
       width: 98px;
       height: 33px;
       position: relative;
-      z-index: 1; }
+      z-index: 2; }
       #topMenu-wrap #topMenu .topMenu_rt li:nth-child(4) b {
         background: url(../image/header.png) no-repeat -73px -122px;
         width: 10px;
@@ -350,7 +352,8 @@
       top: 32px;
       left: -178px;
       display: none;
-      background: #fff; }
+      background: #fff;
+      z-index: 2; }
       #header .header4 .carts .no_cart {
         width: 240px;
         height: 42px;
@@ -360,17 +363,263 @@
         padding-left: 50px; }
 
 #mainNav {
-  width: 100%;
+  width: 1200px;
   height: 32px;
-  border-bottom: 2px solid #679800;
-  background: gold; }
+  margin: auto;
+  border-bottom: 2px solid #679800; }
+  #mainNav .mainNav li {
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 24px;
+    font-size: 14px; }
+    #mainNav .mainNav li:hover {
+      color: #679801; }
+    #mainNav .mainNav li:nth-child(1) {
+      background: #679801;
+      padding: 0 57px; }
+      #mainNav .mainNav li:nth-child(1):hover {
+        color: #000; }
+    #mainNav .mainNav li:nth-child(2) {
+      color: #679801; }
+    #mainNav .mainNav li:nth-child(8) {
+      float: right;
+      padding: 0; }
 
 #slide_show {
   width: 100%;
   height: 480px;
   background: burlywood; }
+  #slide_show .slide_show {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    background: gold;
+    position: relative; }
+    #slide_show .slide_show .sortlist {
+      width: 198px;
+      height: 100%;
+      background: #76ac25;
+      padding: 8px 0 0 15px;
+      box-sizing: border-box; }
+      #slide_show .slide_show .sortlist .prelist {
+        color: #fff;
+        height: 54px;
+        padding: 2px 0 2px 0; }
+        #slide_show .slide_show .sortlist .prelist:hover {
+          background: #fff;
+          color: #76ac25; }
+        #slide_show .slide_show .sortlist .prelist .min_log {
+          margin-right: 5px;
+          display: block;
+          width: 16px;
+          height: 22px;
+          float: left;
+          background: url(../image/left_lm_m.png) no-repeat 0 -159px; }
+        #slide_show .slide_show .sortlist .prelist .min_item {
+          float: left; }
+          #slide_show .slide_show .sortlist .prelist .min_item dt {
+            font-size: 14px;
+            padding-top: 5px;
+            line-height: 22px; }
+          #slide_show .slide_show .sortlist .prelist .min_item dd a {
+            display: block;
+            font-size: 12px;
+            line-height: 20px;
+            height: 20px;
+            float: left;
+            margin-right: 10px;
+            color: #CECECE; }
+    #slide_show .slide_show .detillist {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 198px;
+      width: 560px;
+      height: 480px;
+      background: #fff;
+      opacity: 0.95;
+      padding: 8px;
+      box-sizing: border-box; }
+      #slide_show .slide_show .detillist .apple dt {
+        width: 80px;
+        padding-right: 10px;
+        float: left;
+        text-align: right;
+        height: 18px;
+        line-height: 18px;
+        margin: 4px 0px;
+        color: #76ac25; }
+      #slide_show .slide_show .detillist .apple dd {
+        float: left;
+        width: 452px; }
+        #slide_show .slide_show .detillist .apple dd a {
+          float: left;
+          white-space: nowrap;
+          display: block;
+          text-decoration: none;
+          font-size: 12px;
+          height: 18px;
+          line-height: 18px;
+          margin: 4px 0px;
+          text-align: left;
+          padding: 0px 6px;
+          border-left: 1px solid #ccc;
+          color: #666; }
+      #slide_show .slide_show .detillist img {
+        display: block;
+        width: 560px;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        bottom: 0px; }
+    #slide_show .slide_show .rightpic {
+      width: 260px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 13px;
+      z-index: 1; }
+      #slide_show .slide_show .rightpic img {
+        margin-bottom: 2px; }
+
+#scrollBanner {
+  position: absolute;
+  width: 1000px;
+  height: 480px;
+  overflow: hidden;
+  left: 198px;
+  top: 0; }
+
+#scrollList {
+  width: 1000px;
+  height: 4800px; }
+
+#scrollList ul {
+  position: absolute; }
+
+#scrollList li {
+  float: left;
+  width: 1000px;
+  height: 480px; }
+
+#scrollList img {
+  width: 1000px;
+  height: 480px; }
+
+#nums {
+  position: absolute;
+  left: 235px;
+  bottom: 20px; }
+
+#nums li {
+  float: left;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  background: #77726b;
+  color: white;
+  border-radius: 50%; }
+
+#nums li:hover, #nums li.hover {
+  background: #e2990a;
+  color: white; }
 
 #sixYear_wrap {
   height: 573px;
-  width: 100%;
-  background: url(imgage/thefifthyear.png) top center no-repeat; }
+  background: url(../image/thefifthyear.png) top center no-repeat;
+  margin-top: 25px; }
+  #sixYear_wrap #sixYear {
+    width: 1200px;
+    margin: auto; }
+    #sixYear_wrap #sixYear .title {
+      font-size: 18px;
+      padding: 0 0 12px 3px; }
+      #sixYear_wrap #sixYear .title span {
+        margin: 0 0 0 15px;
+        overflow: hidden;
+        background: url(../image/index_icon_new.png) no-repeat -29px -333px;
+        height: 14px;
+        width: 118px;
+        display: inline-block; }
+    #sixYear_wrap #sixYear .goodSelect {
+      border-left: 1px solid #e8e8e8;
+      float: left;
+      margin-left: 3px;
+      display: block;
+      width: 944px;
+      border-top: 1px solid #e8e8e8; }
+      #sixYear_wrap #sixYear .goodSelect li {
+        position: relative;
+        height: 258px;
+        float: left;
+        border-right: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        overflow: hidden;
+        width: 235px; }
+        #sixYear_wrap #sixYear .goodSelect li .cartName {
+          font-size: 14px;
+          color: #323232;
+          display: inline-block;
+          margin-left: 12px;
+          height: 14px;
+          overflow: hidden;
+          font-family: 微软雅黑;
+          padding-top: 10px;
+          line-height: 14px; }
+        #sixYear_wrap #sixYear .goodSelect li span {
+          color: #f33f00;
+          line-height: 16px;
+          font-weight: bold;
+          margin-left: 12px; }
+        #sixYear_wrap #sixYear .goodSelect li img {
+          width: 204px;
+          height: 204px;
+          float: right;
+          margin-top: 4px; }
+        #sixYear_wrap #sixYear .goodSelect li .buyBtn {
+          position: absolute;
+          width: 160px;
+          height: 24px;
+          left: 40px;
+          bottom: 10px;
+          border-radius: 2px;
+          background: #76ac25;
+          display: none; }
+          #sixYear_wrap #sixYear .goodSelect li .buyBtn a {
+            margin: 0 auto;
+            width: 60px;
+            height: 24px;
+            display: block;
+            background: url(../image/indexsprite.png) no-repeat -66px -177px;
+            line-height: 24px;
+            font-size: 12px;
+            color: #000;
+            padding-left: 20px; }
+        #sixYear_wrap #sixYear .goodSelect li:hover .buyBtn {
+          display: block; }
+    #sixYear_wrap #sixYear .right {
+      float: right;
+      border: 1px solid #E8E8E8;
+      width: 222px;
+      height: 517px; }
+      #sixYear_wrap #sixYear .right .right_title {
+        width: 202px;
+        margin: auto;
+        border-bottom: 1px dotted #DBDBDB;
+        padding: 15px 0 10px 0;
+        line-height: 14px;
+        height: 14px; }
+      #sixYear_wrap #sixYear .right .right_content {
+        margin: 5px 10px;
+        height: 156px;
+        overflow: hidden; }
+        #sixYear_wrap #sixYear .right .right_content li a {
+          line-height: 24px;
+          height: 24px;
+          color: #FA6400; }
