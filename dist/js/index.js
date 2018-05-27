@@ -60,3 +60,51 @@
 
 
 }
+		
+		function hover(){
+			var oPrelist=document.getElementsByClassName("prelist");
+			var oDetillist=document.getElementsByClassName("detillist");
+			
+			for(var i=0; i<oPrelist.length;i++){
+				oPrelist[i].onmouseover=function(){
+					oDetillist[0].style.display="block";
+				}
+				oPrelist[i].onmouseout=function(){
+					oDetillist[0].style.display="none";
+				}
+				oDetillist[0].onmouseover=function(){
+					oDetillist[0].style.display="block";
+				}
+				oDetillist[0].onmouseout=function(){
+					oDetillist[0].style.display="none";
+				}
+			}
+		}
+
+function DDjs(){
+setInterval(function(){
+				var oDate1=new Date();
+				var oDate2=new Date("2018-6-3 20:10:15");
+				var oDjs=document.getElementsByClassName("djs")[0];				
+				var oLi=oDjs.children;				
+				function djs(date1,date2){
+					var ss=Math.abs(date1-date2)/1000;
+					var days=Math.floor(ss/3600/24);
+					var hours=Math.floor(ss/3600%24);
+					var mins=Math.floor(ss/60%60);
+					var miao=Math.floor(ss%60);					
+					var str = ""+format(hours)+format(mins)+format(miao);
+					function format(num){
+						return num < 10 ? "0"+num : num;
+					}					
+					oLi[1].innerHTML=str[0];
+					oLi[2].innerHTML=str[1];
+					oLi[4].innerHTML=str[2];
+					oLi[5].innerHTML=str[3];
+					oLi[7].innerHTML=str[4];
+					oLi[8].innerHTML=str[5];
+				}
+				djs(oDate1,oDate2);				
+			},1000)
+
+}
