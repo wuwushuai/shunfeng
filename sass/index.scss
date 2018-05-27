@@ -921,8 +921,218 @@
        .mainContent{
            width: 100%;
            height: 470px;
+           border-top: 1px solid #76ac25;
+           .mainLeft{
+               width: 240px;
+               h2{
+                   height: 50px;
+                   background: #76ac25;
+                   color: #fff;
+                   
+                   line-height: 50px;
+                   em{
+                        background: url(../image/index_icon_new.png) no-repeat -97px -295px;
+                        width: 15px;
+                        height: 16px;
+                        float: left;
+                        margin: 16px 8px 0 75px;
+                   }
+               }
+               img{
+                   margin-left: -10px;
+               }
+           }
+           .mainCenter{
+               width: 710px;
+               height: 452px;
+               padding: 7px 15px 9px 15px;
+               border-bottom: 1px solid #CECECE;
+               .precart{
+                   width: 160px;
+                   height: 210px;
+                   padding: 8px;
+                   .precart1{
+                       
+                       position: relative;
+                       &:hover{
+                           .buyBtn{
+                               display: block;
+                           }
+                       }
+                       p{
+                           width: 150px;
+                           height: 32px;
+                           line-height: 32px;
+                           overflow: hidden;
+                       }
+                       .buyBtn{
+                            position: absolute;
+                            width: 160px;
+                            height: 24px;
+                            left: 0px;
+                            top:136px;
+                            border-radius: 2px;
+                            background: #76ac25;
+                            display: none;
+                            span{
+                                margin: 0 auto;
+                                width: 60px;
+                                height: 24px;
+                                display: block;
+                                background: url(../image/indexsprite.png) no-repeat -66px -177px;
+                                line-height: 24px;
+                                font-size: 12px;
+                                color: #000;
+                                padding-left: 20px;
+                            }
+                        }
+                       
+                   }
+                   .price{
+                       font-size: 14px;
+                       color: #f33f00;
+                   }   
+               }
+           }
+           .mainRight{
+               width: 220px;
+               height: 469px;
+               background: #f4f4f4;
+               .hotEat{
+                   width: 205px;
+                   height: 189px;
+                   margin: 25px 0 25px 15px;
+                   li{
+                       width: 55px;
+                       height: 55px;
+                       margin: 4px;
+                       background: #fff;
+                       border-radius: 50%;
+                        text-align: center;
+                        line-height: 55px;
+                        float: left;
+                        &:hover{
+                            background: green;
+                            color: #fff;
+                        }
+                   }
+               }
+           }
        }
     }
     
     
 }
+
+
+//为你推荐
+#promote{
+    width: 1170px;
+    height: 1848px;
+    margin: auto;
+    margin-top: 46px;    
+    padding: 15px 14px;
+    border: 1px solid #CECECE;
+    position: relative;
+    .promoteTop{      
+        width: 116px;
+        height: 23px;
+        position: absolute;
+        top: -14px;
+        left: 50%;
+        margin-left: -58px;
+        background: #fff;
+        text-align: center;
+        span{
+            width: 97px;
+            height: 23px;
+            display: inline-block;
+            background: url(../image/sf_new_bg.png) left top no-repeat;
+        }
+    }
+   
+    
+    .preContent{
+                  width: 210px;
+        height: 278px;
+        padding: 15px 12px;
+                   .precart1{
+                       
+                       position: relative;
+                       &:hover{
+                           .buyBtn{
+                               display: block;
+                           }
+                       }
+                       p{
+                           width: 150px;
+                           height: 32px;
+                           line-height: 32px;
+                           overflow: hidden;
+                       }
+                       .buyBtn{
+                            position: absolute;
+                            width: 210px;
+                            height: 24px;
+                            left: 0px;
+                            top:186px;
+                            border-radius: 2px;
+                            background: #76ac25;
+                            display: none;
+                            span{
+                                margin: 0 auto;
+                                width: 60px;
+                                height: 24px;
+                                display: block;
+                                background: url(../image/indexsprite.png) no-repeat -66px -177px;
+                                line-height: 24px;
+                                font-size: 12px;
+                                color: #000;
+                                padding-left: 20px;
+                            }
+                        }
+                       
+                   }
+                   .price{
+                       font-size: 14px;
+                       color: #f33f00;
+                   }   
+               }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
