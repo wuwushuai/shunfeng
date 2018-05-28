@@ -1,0 +1,148 @@
+#header1{
+    width: 1000px;
+    height: 66px;
+    margin: 20px auto;
+    .header1{
+        width: 244px;
+        height: 100%;
+        float: left;                
+        a{
+            display: block;
+            float: left;
+             height:66px; 
+            &:nth-child(1){
+                width:126px;                
+                background: url(../image/indexImg20130307.png) -33px 0px no-repeat;
+            }
+            &:nth-child(2){
+                width: 116px;              
+                background: url(../image/indexImg20130307.png) -160px 0px no-repeat;
+            }
+        }    
+    }
+    span{
+        display: block;
+        width: 96px;
+        height: 70px;      
+        padding-left:3px;
+        font-size:24px ;
+        line-height: 70px;
+    }
+}
+
+//denglu
+
+
+#denglu{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    .denglu_left{
+        width: 540px;
+        height: 390px;
+        padding-top: 14px;
+    }
+    .denglu_right{
+        width: 400px;
+        margin-left: 10px;
+        .tit{
+            width: 400px;
+            height: 50px;
+            span{
+                &:nth-child(1){
+                    font-size: 16px;
+                }
+                &:nth-child(2){
+                    font-size: 12px;
+                    border: 1px solid forestgreen;
+                    width: 72px;
+                    height: 27px;
+                    line-height: 27px;
+                    text-align: center;
+                    background: #f2c6a1;
+                }
+            }
+        }
+        
+        .main_deng{
+            width: 398px;
+            height: 426px;
+            border: 1px solid #CECECE;
+            .top{
+                height: 30px;
+                li{
+                    float: left;
+                    width: 132px;
+                    height: 30px;
+                    border-bottom: 1px solid #CECECE;
+                    border-right: 1px solid #CECECE;
+                    line-height: 30px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    span{
+                        display: inline-block;
+                        margin: 10px 5px 0 24px;
+                        background: url(../image/loginicon.png) no-repeat ;
+                        width: 15px;
+                        height: 15px;
+                    }
+                    &:nth-child(3){
+                        border: 0;
+                        border-bottom: 1px solid #CECECE;
+                        
+                    }
+                }
+            }
+           .Form{
+              
+               input{
+                   width: 320px;
+                   height: 32px;
+                   margin: 0 20px 15px 30px;
+               }
+               h3{
+                   //height: 20px;
+                   margin-left: 30px;                  
+                   padding-top: 20px;
+               }
+           
+           #yanma{
+               width:80px;
+               margin-top: 20px;
+           }
+           .forget{
+               margin-right: 50px;
+           }
+           
+           .submit{
+               margin-top: 20px;
+               input{
+                    background: green;
+                    border: 0;
+               border-radius: 3px;
+               }
+              
+           }
+           }
+        
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+#header1 {
+  width: 1000px;
+  height: 66px;
+  margin: 20px auto; }
+  #header1 .header1 {
+    width: 244px;
+    height: 100%;
+    float: left; }
+    #header1 .header1 a {
+      display: block;
+      float: left;
+      height: 66px; }
+      #header1 .header1 a:nth-child(1) {
+        width: 126px;
+        background: url(../image/indexImg20130307.png) -33px 0px no-repeat; }
+      #header1 .header1 a:nth-child(2) {
+        width: 116px;
+        background: url(../image/indexImg20130307.png) -160px 0px no-repeat; }
+  #header1 span {
+    display: block;
+    width: 96px;
+    height: 70px;
+    padding-left: 3px;
+    font-size: 24px;
+    line-height: 70px; }
+
+#denglu {
+  width: 1000px;
+  height: 500px;
+  margin: auto; }
+  #denglu .denglu_left {
+    width: 540px;
+    height: 390px;
+    padding-top: 14px; }
+  #denglu .denglu_right {
+    width: 400px;
+    margin-left: 10px; }
+    #denglu .denglu_right .tit {
+      width: 400px;
+      height: 50px; }
+      #denglu .denglu_right .tit span:nth-child(1) {
+        font-size: 16px; }
+      #denglu .denglu_right .tit span:nth-child(2) {
+        font-size: 12px;
+        border: 1px solid forestgreen;
+        width: 72px;
+        height: 27px;
+        line-height: 27px;
+        text-align: center;
+        background: #f2c6a1; }
+    #denglu .denglu_right .main_deng {
+      width: 398px;
+      height: 426px;
+      border: 1px solid #CECECE; }
+      #denglu .denglu_right .main_deng .top {
+        height: 30px; }
+        #denglu .denglu_right .main_deng .top li {
+          float: left;
+          width: 132px;
+          height: 30px;
+          border-bottom: 1px solid #CECECE;
+          border-right: 1px solid #CECECE;
+          line-height: 30px;
+          font-size: 14px;
+          cursor: pointer; }
+          #denglu .denglu_right .main_deng .top li span {
+            display: inline-block;
+            margin: 10px 5px 0 24px;
+            background: url(../image/loginicon.png) no-repeat;
+            width: 15px;
+            height: 15px; }
+          #denglu .denglu_right .main_deng .top li:nth-child(3) {
+            border: 0;
+            border-bottom: 1px solid #CECECE; }
+      #denglu .denglu_right .main_deng .Form input {
+        width: 320px;
+        height: 32px;
+        margin: 0 20px 15px 30px; }
+      #denglu .denglu_right .main_deng .Form h3 {
+        margin-left: 30px;
+        padding-top: 20px; }
+      #denglu .denglu_right .main_deng .Form #yanma {
+        width: 80px;
+        margin-top: 20px; }
+      #denglu .denglu_right .main_deng .Form .forget {
+        margin-right: 50px; }
+      #denglu .denglu_right .main_deng .Form .submit {
+        margin-top: 20px; }
+        #denglu .denglu_right .main_deng .Form .submit input {
+          background: green;
+          border: 0;
+          border-radius: 3px; }
