@@ -1,0 +1,48 @@
+@charset "UTF-8";
+body, ul, li, h2, p, span {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "微软雅黑";
+  font-size: 14px; }
+
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  width: 40px;
+  height: 40px; }
+
+#cartList {
+  border: 1px solid #cecece;
+  margin: 50px;
+  width: 800px; }
+
+#cartList li {
+  border-bottom: 1px solid #cecece;
+  height: 80px; }
+
+#cartList li:nth-child(1) {
+  line-height: 80px;
+  font-size: 30px;
+  text-align: center; }
+
+#cartList li:last-child {
+  line-height: 80px;
+  font-size: 30px; }
+
+#cartList li img {
+  width: 80px;
+  height: 80px; }
+
+li span {
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  margin: 10px; }
+
+li span:nth-child(6) {
+  color: red;
+  cursor: pointer; }

@@ -1,0 +1,8 @@
+#slide_show .sortlist {
+  position: absolute;
+  top: 0;
+  z-index: 2; }
+
+#slide_show #scrollBanner {
+  position: absolute;
+  top: 0; }

@@ -4,13 +4,15 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/denglu.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/denglu.css"/>	
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/denglu.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="header1">
 			<div class="header1 fl">
-				<a href="" ></a>
-				<a href="" ></a>					
+				<a href="index.html" ></a>
+				<a href="index.html" ></a>					
 			</div>
 			<span id="" class="fl">欢迎登录</span>		
 		</div>
@@ -20,7 +22,7 @@
 				<img src="image/denglu.png"/>
 			</div>
 			<div class="denglu_right fl">
-				<h2 class="tit"><span class="fl">您还未登录</span><span class="fr">免费注册</span></h2>
+				<h2 class="tit"><span class="fl">您还未登录</span><span class="fr"><a href="zhuce.html">免费注册</span></a></h2>
 				<div class="main_deng">
 					<ul class="top">
 						<li><span></span>优选账号</li>
@@ -39,14 +41,14 @@
 			                <label for="passWord"><h3 class="Lable">登录密码</h3></label>
 			                <input type="password" id="passWord">
 			            </p> 
-			            <p>
+			            <!--<p>
 			                <label for="yanma"><span class="Lable"></label>
 			                <input type="text" id="yanma"><span class="warn">请再次输入密码</span>
 			            </p>
-			            <p class="forget fr"><a href="">忘记密码?</a></p>
+			            <p class="forget fr"><a href="">忘记密码?</a></p>-->
 			            
 			            <p class="submit">	                
-			                <input type="button"  value="立即注册">
+			                <input type="button" id="btn" value="立即登录">
 			            </p>
 			        </form>
 					

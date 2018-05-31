@@ -5,6 +5,9 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zhuce.js" type="text/javascript" charset="utf-8"></script>
+		
 	</head>
 	<body>
 		<div id="header1">
@@ -17,7 +20,7 @@
 			
 		<div id="tabBox">
 		    <span class="reg_show fl" id="regper">个人用户</span>
-		    <div class="login fr">已有账号，立即   <a href="" class="fr">登录</a></div>
+		    <div class="login fr">已有账号，立即   <a href="denglu.html" class="fr">登录</a></div>
 		</div>
 		
 		<div id="table_content">
@@ -31,7 +34,7 @@
 	                <label for="passWord"><span class="Lable"><font>*</font> 登录密码：</span></label>
 	                <input type="password" id="passWord"><span class="warn">密码为6-16位</span>
 	            </p>    
-                <p id="">安全程度：
+                <p id="strongpsw">安全程度：
                 	<span>弱</span>
                 	<span>中</span>
                 	<span>强</span>
@@ -55,7 +58,7 @@
 	            </p>
 	            
 	            <p>	                
-	                <input type="button"  value="立即注册">
+	                <input type="button"  id="btn" value="立即注册">
 	            </p>
 			</form>
 		</div>

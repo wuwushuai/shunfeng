@@ -1,0 +1,134 @@
+#maindetail {
+  width: 1200px;
+  height: 500px;
+  margin: 20px auto; }
+
+#box {
+  width: 400px;
+  height: 400px;
+  float: left;
+  position: relative;
+  border: 1px solid #000; }
+
+#mid {
+  width: 400px;
+  height: 400px;
+  position: absolute; }
+
+#mid img {
+  width: 400px;
+  height: 400px; }
+
+#zoom {
+  width: 200px;
+  height: 200px;
+  display: none;
+  position: absolute;
+  background-color: #222222;
+  opacity: .5; }
+
+#max {
+  position: absolute;
+  left: 400px;
+  top: -1px;
+  display: none;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #000;
+  overflow: hidden;
+  z-index: 1; }
+
+#max img {
+  width: 800px;
+  height: 800px;
+  position: absolute; }
+
+#min {
+  width: 400px;
+  height: 100px;
+  border: 1px solid #000;
+  position: absolute;
+  top: 400px;
+  left: -1px;
+  overflow: hidden; }
+
+#min img {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: 10px; }
+
+.tobuy {
+  width: 600px;
+  height: 500px;
+  background: #CECECE;
+  margin-left: 10px; }
+  .tobuy .buyName {
+    height: 60px;
+    font-size: 18px;
+    padding: 20px; }
+  .tobuy .buyPrice {
+    height: 90px;
+    padding-top: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: #fa8e19;
+    color: #fff; }
+    .tobuy .buyPrice span {
+      font-size: 12px; }
+      .tobuy .buyPrice span:nth-child(2) {
+        font-size: 50px; }
+  .tobuy .buyAdress {
+    height: 25px;
+    line-height: 25px;
+    margin: 20px; }
+    .tobuy .buyAdress span {
+      float: left; }
+      .tobuy .buyAdress span:nth-child(1) {
+        margin-left: 40px; }
+      .tobuy .buyAdress span:nth-child(2) {
+        display: block;
+        border: 1px solid #000;
+        text-align: left;
+        width: 40px;
+        position: relative; }
+        .tobuy .buyAdress span:nth-child(2) b {
+          background: url(../image/indexImg20130307.png) no-repeat -386px -2px;
+          display: block;
+          height: 24px;
+          overflow: hidden;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 17px; }
+  .tobuy .isHave {
+    height: 50px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    margin-top: 40px; }
+    .tobuy .isHave li {
+      float: left;
+      font-size: 16px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer; }
+      .tobuy .isHave li:nth-child(1) {
+        border: 1px solid #000;
+        width: 80px; }
+        .tobuy .isHave li:nth-child(1) .shu {
+          float: left;
+          width: 50px;
+          border-right: 1px solid #cecece; }
+        .tobuy .isHave li:nth-child(1) p span {
+          font-size: 20px;
+          border: 1px solid #000; }
+      .tobuy .isHave li:nth-child(2) {
+        width: 120px;
+        background: green;
+        margin: 0 20px;
+        border-radius: 10px; }
+      .tobuy .isHave li:nth-child(3) {
+        width: 120px;
+        background: yellow;
+        margin: 0 20px;
+        border-radius: 10px; }

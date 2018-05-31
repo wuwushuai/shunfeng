@@ -1,4 +1,9 @@
-		function slide(){	
+		
+	$(function(){
+		
+	
+		
+		function slide(){
 			var oSlide_show=document.getElementById("slide_show");
 			var oScrollBanner = document.getElementById("scrollBanner");
 			var oScrollList = document.getElementById("scrollList");
@@ -60,6 +65,7 @@
 
 
 }
+		slide();		
 		
 		function hover(){
 			var oPrelist=document.getElementsByClassName("prelist");
@@ -80,31 +86,127 @@
 				}
 			}
 		}
+		hover();
 
-function DDjs(){
-setInterval(function(){
-				var oDate1=new Date();
-				var oDate2=new Date("2018-6-3 20:10:15");
-				var oDjs=document.getElementsByClassName("djs")[0];				
-				var oLi=oDjs.children;				
-				function djs(date1,date2){
-					var ss=Math.abs(date1-date2)/1000;
-					var days=Math.floor(ss/3600/24);
-					var hours=Math.floor(ss/3600%24);
-					var mins=Math.floor(ss/60%60);
-					var miao=Math.floor(ss%60);					
-					var str = ""+format(hours)+format(mins)+format(miao);
-					function format(num){
-						return num < 10 ? "0"+num : num;
-					}					
-					oLi[1].innerHTML=str[0];
-					oLi[2].innerHTML=str[1];
-					oLi[4].innerHTML=str[2];
-					oLi[5].innerHTML=str[3];
-					oLi[7].innerHTML=str[4];
-					oLi[8].innerHTML=str[5];
+		function DDjs(){
+		setInterval(function(){
+						var oDate1=new Date();
+						var oDate2=new Date("2018-6-3 20:10:15");
+						var oDjs=document.getElementsByClassName("djs")[0];				
+						var oLi=oDjs.children;				
+						function djs(date1,date2){
+							var ss=Math.abs(date1-date2)/1000;
+							var days=Math.floor(ss/3600/24);
+							var hours=Math.floor(ss/3600%24);
+							var mins=Math.floor(ss/60%60);
+							var miao=Math.floor(ss%60);					
+							var str = ""+format(hours)+format(mins)+format(miao);
+							function format(num){
+								return num < 10 ? "0"+num : num;
+							}					
+							oLi[1].innerHTML=str[0];
+							oLi[2].innerHTML=str[1];
+							oLi[4].innerHTML=str[2];
+							oLi[5].innerHTML=str[3];
+							oLi[7].innerHTML=str[4];
+							oLi[8].innerHTML=str[5];
+						}
+						djs(oDate1,oDate2);				
+					},1000)
+		
+		}
+		DDjs();
+
+
+	/*let obj = {
+		url:"../data/fenlei.json",
+		type:"get",
+		success:function(data){
+			var data=JSON.parse(data);
+			console.log(data);
+			//location.reload();
+			
+			//$(".prelist")
+		}
+	}
+	
+	Ajax(obj);*/
+	
+	
+	/*let obj = {
+		url:"../data/fenlei.json",
+		type:"get",		
+		success:function(data){
+			var data=JSON.parse(data);
+			var oBox=document.getElementsByClassName("sortlist")[0];
+			
+			//console.log(data);
+			//location.reload();
+			//console.log(data.list1)
+			
+			for(var attr in data){
+				//console.log(data[attr]);
+				var arr=data[attr];
+				
+				
+				var oDL=document.getElementsByClassName("prelist");
+				for(var i=0;i<arr.length;i++){
+					//console.log(arr[i])
+					oBox.innerHTML+=`<div class="prelist"><dl class="min_item"><dt>${arr[i][0]}</dt><dd></dd></dl></div>`;
+					
+					var oDiv=document.getElementsByClassName("prelist")[i];
+					var oDL=oDiv.children[0];//获取到dl
+					var odd=oDL.children[1];//获取到dd					
+					for(var j=0;j<arr[i][1].length;j++){
+						console.log(arr[i][1][j])
+						odd.innerHTML+=`<a href="">${arr[i][1][j]}</a>`;	
+					}
 				}
-				djs(oDate1,oDate2);				
-			},1000)
+			}
+		}
+	}
+	
+	Ajax(obj);*/
+	
+	
+	window.onscroll=function(){
+		var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+		var totop=document.getElementById("totop");
+		totop.onclick=function(){			
+			document.documentElement.scrollTop=document.body.scrollTop=0;
+		}		
+	}
+	
+	
+			
+			
+	
+	
 
-}
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
